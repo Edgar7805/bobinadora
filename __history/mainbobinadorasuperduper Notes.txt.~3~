@@ -1,0 +1,70 @@
+
+
+la calculacion
+
+
+>>Datos.
+>>Vueltas:300
+>>Diámetro calibre: 0.12mm
+>>Ancho de bobina 30mm
+>>Avance de paso 0.4
+>>Loop,cambio de sentido: 275    ancho de bobina/Diametro de calibre= Loop cmabio de sentido 
+
+entonces tenemos los siguiente.
+
+si
+
+int loop_cambiar_sentido = 0;   //contador que al igualarse a loop de referencia, cambiara el sentido y vuelve a ser 0
+int loop_referencia = XX;       // dato recibido por puerto serial, indica hasta cuanto debe llegar antes de cmabiar de sentido 
+
+void bobinar (){
+   
+    while(vueltas>0){
+        output_high(PIN_C2);  //pulso motor B
+        delay_us(1000);
+        output_low(PIN_C2);
+        delay_us(1000);
+        pasos_rotacion--;
+        
+        //al completar una vuelta 
+        if (pasos_rotacion==0){
+            vueltas--;
+            pasos_rotacion = 199;
+            //hace havanzar el ejex
+            int8 t = 1;
+            while( t<=pasos_en_x_vuelta){
+                output_high(PIN_C1); //pulso botor A
+                delay_us(600);
+                output_low(PIN_C1);
+                delay_us(600);
+                t++;
+                loop_cmabiar_sentido++;
+             }
+             
+             printf(usb_cdc_putc,"%li",vueltas);
+             if(loopcambiar_sentido>=loop_referencia){
+               output_togle(PiN_X);
+               
+             
+             }
+             
+        }
+    }
+    iniciar= 0;
+    usb_cdc_putc("completado");
+}
+
+
+
+
+void calibrar(){
+   output
+
+
+
+
+
+
+
+
+}

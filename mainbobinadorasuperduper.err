@@ -1,0 +1,10 @@
+Compiling C:\Users\Edgar\Documents\CCS C Projects\bobinadora8000\mainbobinadorasuperduper on 05-dic.-22 at 19:59
+>>> Warning 203 "C:\Program Files (x86)\PICC\Drivers\pic18_usb.c" Line 728(1,1): Condition always TRUE
+>>> Warning 216 "C:\Users\Edgar\Documents\CCS C Projects\bobinadora8000\mainbobinadorasuperduper.c" Line 224(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_token_reset)
+>>> Warning 216 "C:\Users\Edgar\Documents\CCS C Projects\bobinadora8000\mainbobinadorasuperduper.c" Line 224(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_cdc_get_discard)
+>>> Warning 216 "C:\Users\Edgar\Documents\CCS C Projects\bobinadora8000\mainbobinadorasuperduper.c" Line 224(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_cdc_flush_tx_buffer)
+>>> Warning 216 "C:\Users\Edgar\Documents\CCS C Projects\bobinadora8000\mainbobinadorasuperduper.c" Line 224(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_tbe)
+>>> Warning 216 "C:\Users\Edgar\Documents\CCS C Projects\bobinadora8000\mainbobinadorasuperduper.c" Line 224(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_cdc_init)
+      Memory usage:   ROM=26%      RAM=26% - 28%
+      0 Errors,  6 Warnings.
+Build Successful.
