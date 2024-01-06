@@ -1,6 +1,7 @@
 # bobinadora
 bobinadora semi automatica
-bobinadora basada en microntrolador pic18f4550,
+bobinadora basada en microntrolador pic18f4550.
+compilador usado CCS PIC C compiler.
 controla 2 motores parado paso un para el eje x (avance del bobinado ), otro para el C(rotacion)
 mediante drivers como el DRV8825, A4988.
 los datos deben cargarse mediante la interfaz suministrada u otra plaicaicon para enviar datos seriales
